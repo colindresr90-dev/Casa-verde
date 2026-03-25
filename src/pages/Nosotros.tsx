@@ -116,8 +116,12 @@ const Nosotros = () => {
       </section>
 
       {/* Values */}
-      <section className="py-24 px-6 lg:px-16 bg-primary">
-        <div className="max-w-[1400px] mx-auto">
+      <section className="py-24 px-6 lg:px-16 relative overflow-hidden">
+        <div className="absolute inset-0">
+          <img src={valuesBg} alt="" className="w-full h-full object-cover" />
+          <div className="absolute inset-0 bg-primary/85" />
+        </div>
+        <div className="max-w-[1400px] mx-auto relative z-10">
           <ScrollReveal>
             <div className="text-center mb-16">
               <p className="text-sm font-semibold uppercase tracking-widest text-primary-foreground/70 mb-4 font-body">
