@@ -76,7 +76,7 @@ const Contacto = () => {
                     <label className="text-sm font-body font-medium text-foreground mb-2 block">Teléfono</label>
                     <Input
                       type="tel"
-                      placeholder="+52 55 1234 5678"
+                      placeholder="+503 7890 1234"
                       value={form.phone}
                       onChange={(e) => setForm({ ...form, phone: e.target.value })}
                       className="rounded-xl bg-background border-border/50 h-12"
@@ -120,7 +120,7 @@ const Contacto = () => {
                       </div>
                       <div>
                         <p className="text-primary-foreground font-body font-medium">Teléfono</p>
-                        <p className="text-primary-foreground/70 font-body">+52 55 1234 5678</p>
+                        <p className="text-primary-foreground/70 font-body">+503 7890 1234</p>
                       </div>
                     </div>
                     <div className="flex items-start gap-4">
@@ -129,7 +129,7 @@ const Contacto = () => {
                       </div>
                       <div>
                         <p className="text-primary-foreground font-body font-medium">Ubicación</p>
-                        <p className="text-primary-foreground/70 font-body">Av. Reforma 222, Col. Juárez<br />Ciudad de México, CP 06600</p>
+                        <p className="text-primary-foreground/70 font-body">Blvd. Los Héroes, Col. San Benito<br />San Salvador, El Salvador</p>
                       </div>
                     </div>
                   </div>
@@ -138,7 +138,7 @@ const Contacto = () => {
                 {/* Map */}
                 <div className="rounded-3xl overflow-hidden border border-border/50 h-[300px]">
                   <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3762.661036558697!2d-99.16869032414474!3d19.42702128186783!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ff35f5bd1563%3A0x789c3f1f4da9b0e2!2sAv.%20Paseo%20de%20la%20Reforma%2C%20Ciudad%20de%20M%C3%A9xico!5e0!3m2!1ses!2smx!4v1700000000000!5m2!1ses!2smx"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3876.2!2d-89.2272!3d13.6929!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f633067e22a1e7d%3A0x2f26e1d119097b91!2sBlvd.%20Los%20H%C3%A9roes%2C%20San%20Salvador!5e0!3m2!1ses!2ssv!4v1700000000000!5m2!1ses!2ssv"
                     width="100%"
                     height="100%"
                     style={{ border: 0 }}
