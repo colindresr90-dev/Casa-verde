@@ -14,7 +14,7 @@ export function AboutSection() {
         >
           <source src="/videos/about-bg.mp4" type="video/mp4" />
         </video>
-        <div className="absolute inset-0 bg-background/85" />
+        <div className="absolute inset-0 bg-black/40" />
       </div>
 
       <div className="max-w-[1400px] mx-auto relative z-10">
