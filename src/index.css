@@ -77,6 +77,53 @@
   }
 }
 
+/* Text flip animation */
+.btn-flip {
+  display: inline-flex;
+  overflow: hidden;
+  position: relative;
+}
+
+.btn-flip .btn-flip-text {
+  display: inline-block;
+  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn-flip:hover .btn-flip-text {
+  transform: translateY(-100%);
+}
+
+.btn-flip .btn-flip-text::after {
+  content: attr(data-text);
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+}
+
+/* Nav link flip */
+.nav-flip {
+  display: inline-block;
+  overflow: hidden;
+  position: relative;
+}
+
+.nav-flip .nav-flip-inner {
+  display: inline-block;
+  transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.nav-flip:hover .nav-flip-inner {
+  transform: translateY(-100%);
+}
+
+.nav-flip .nav-flip-inner::after {
+  content: attr(data-text);
+  position: absolute;
+  top: 100%;
+  left: 0;
+}
+
 html {
   scroll-behavior: smooth;
 }
