@@ -77,55 +77,26 @@
   }
 }
 
-/* Text flip animation */
-.btn-flip {
-  display: inline-flex;
-  overflow: hidden;
-  position: relative;
-}
-
-.btn-flip .btn-flip-text {
+/* Text roll animation for buttons and nav */
+.text-roll {
   display: inline-block;
-  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.btn-flip:hover .btn-flip-text {
-  transform: translateY(-100%);
-}
-
-.btn-flip .btn-flip-text::after {
-  content: attr(data-text);
-  position: absolute;
-  top: 100%;
-  left: 0;
-  width: 100%;
-}
-
-/* Nav link flip - continuous roll while hovered */
-.nav-flip {
-  display: inline-flex;
   overflow: hidden;
-  height: 1.25em;
-  line-height: 1.25em;
+  vertical-align: middle;
 }
 
-.nav-flip .nav-flip-inner {
-  display: flex;
-  flex-direction: column;
+.text-roll .text-roll-inner {
+  display: block;
+  transition: transform 0.35s cubic-bezier(0.19, 1, 0.22, 1);
 }
 
-.nav-flip .nav-flip-inner span {
-  height: 1.25em;
-  line-height: 1.25em;
+.text-roll:hover .text-roll-inner {
+  transform: translateY(-50%);
 }
 
-.nav-flip:hover .nav-flip-inner {
-  animation: navRoll 0.4s ease forwards;
-}
-
-@keyframes navRoll {
-  0% { transform: translateY(0); }
-  100% { transform: translateY(-50%); }
+.text-roll .text-roll-inner span {
+  display: block;
+  height: 1.4em;
+  line-height: 1.4em;
 }
 
 html {
