@@ -154,6 +154,61 @@ const Contacto = () => {
         </div>
       </section>
 
+      {/* Why Work With Us */}
+      <section className="pb-24 px-6 lg:px-16">
+        <div className="max-w-[1400px] mx-auto">
+          <ScrollReveal>
+            <div className="bg-primary rounded-3xl p-10 md:p-16">
+              <div className="text-center mb-12">
+                <h2 className="font-display font-black text-primary-foreground text-3xl md:text-5xl italic mb-4">
+                  ¿Por qué elegirnos?
+                </h2>
+                <p className="text-primary-foreground/70 font-body text-lg max-w-xl mx-auto">
+                  Más que una agencia, somos tu socio estratégico de crecimiento.
+                </p>
+              </div>
+              <div className="grid md:grid-cols-3 gap-8">
+                {[
+                  { number: "01", title: "Respuesta rápida", desc: "Te respondemos en menos de 24 horas con una propuesta clara y sin compromiso." },
+                  { number: "02", title: "Resultados medibles", desc: "Cada proyecto incluye métricas y reportes para que veas el impacto real." },
+                  { number: "03", title: "Acompañamiento total", desc: "Desde la estrategia hasta la ejecución, estamos contigo en cada paso." },
+                ].map((item) => (
+                  <div key={item.number} className="text-center md:text-left">
+                    <span className="text-accent font-display font-black text-4xl">{item.number}</span>
+                    <h3 className="font-display font-bold text-primary-foreground text-xl mt-3 mb-2">{item.title}</h3>
+                    <p className="text-primary-foreground/60 font-body text-sm leading-relaxed">{item.desc}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </ScrollReveal>
+        </div>
+      </section>
+
+      {/* CTA Banner */}
+      <section className="pb-24 px-6 lg:px-16">
+        <div className="max-w-[1400px] mx-auto">
+          <ScrollReveal>
+            <div className="bg-accent rounded-3xl p-10 md:p-16 text-center">
+              <h2 className="font-display font-black text-accent-foreground text-3xl md:text-5xl italic mb-4">
+                Tu próximo proyecto empieza aquí
+              </h2>
+              <p className="text-accent-foreground/80 font-body text-lg max-w-xl mx-auto mb-8">
+                Agenda una llamada sin compromiso y descubre cómo podemos ayudarte a crecer.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="tel:+50378901234" className="inline-flex items-center justify-center gap-2 bg-primary text-primary-foreground px-8 py-4 rounded-full font-body font-semibold hover:scale-105 transition-transform">
+                  <Phone size={18} /> Llámanos ahora
+                </a>
+                <a href="mailto:hola@agencia.com" className="inline-flex items-center justify-center gap-2 bg-accent-foreground text-accent px-8 py-4 rounded-full font-body font-semibold hover:scale-105 transition-transform">
+                  <Mail size={18} /> Escríbenos
+                </a>
+              </div>
+            </div>
+          </ScrollReveal>
+        </div>
+      </section>
+
       <Footer />
     </main>
   );
