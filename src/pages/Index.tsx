@@ -24,7 +24,6 @@ const Index = () => {
       <PricingSection />
       <FAQSection />
       <ContactSection />
-      <CTABanner />
       <Footer />
     </main>
   );
