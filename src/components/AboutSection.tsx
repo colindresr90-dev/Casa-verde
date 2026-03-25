@@ -2,8 +2,22 @@ import { ScrollReveal } from "@/components/ScrollReveal";
 
 export function AboutSection() {
   return (
-    <section id="nosotros" className="py-24 px-6 lg:px-16 bg-background">
-      <div className="max-w-[1400px] mx-auto">
+    <section id="nosotros" className="relative py-24 px-6 lg:px-16 overflow-hidden">
+      {/* Video Background */}
+      <div className="absolute inset-0">
+        <video
+          autoPlay
+          muted
+          loop
+          playsInline
+          className="w-full h-full object-cover"
+        >
+          <source src="/videos/about-bg.mp4" type="video/mp4" />
+        </video>
+        <div className="absolute inset-0 bg-background/85" />
+      </div>
+
+      <div className="max-w-[1400px] mx-auto relative z-10">
         <ScrollReveal>
           <p className="text-sm font-semibold uppercase tracking-widest text-foreground mb-4 font-body">
             Sobre Nosotros
