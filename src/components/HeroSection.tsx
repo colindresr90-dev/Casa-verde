@@ -2,6 +2,7 @@ import heroImg1 from "@/assets/hero-1.jpg";
 import heroImg2 from "@/assets/hero-2.jpg";
 import { Button } from "@/components/ui/button";
 import { ArrowUpRight } from "lucide-react";
+import { Link } from "react-router-dom";
 
 export function HeroSection() {
   return (
@@ -19,12 +20,16 @@ export function HeroSection() {
             experiencias de marca inolvidables que impulsan negocios.
           </p>
           <div className="mt-10 flex flex-wrap gap-4">
-            <Button variant="accent" size="lg">
-              Trabajemos juntos
-            </Button>
-            <Button variant="outlinePrimary" size="lg">
-              Ver trabajos <ArrowUpRight className="ml-1" size={16} />
-            </Button>
+            <Link to="/contacto">
+              <Button variant="accent" size="lg">
+                Trabajemos juntos
+              </Button>
+            </Link>
+            <Link to="/trabajos">
+              <Button variant="outlinePrimary" size="lg">
+                Ver trabajos <ArrowUpRight className="ml-1" size={16} />
+              </Button>
+            </Link>
           </div>
         </div>
 

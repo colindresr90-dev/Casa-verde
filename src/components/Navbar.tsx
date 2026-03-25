@@ -1,17 +1,19 @@
 import { useState } from "react";
+import { Link, useLocation } from "react-router-dom";
 import { cn } from "@/lib/utils";
 import { Menu, X } from "lucide-react";
 
 const navItems = [
-  { label: "Inicio", href: "#inicio" },
-  { label: "Nosotros", href: "#nosotros" },
-  { label: "Servicios", href: "#servicios" },
-  { label: "Trabajos", href: "#trabajos" },
-  { label: "Contacto", href: "#contacto" },
+  { label: "Inicio", href: "/" },
+  { label: "Nosotros", href: "/nosotros" },
+  { label: "Servicios", href: "/servicios" },
+  { label: "Trabajos", href: "/trabajos" },
+  { label: "Contacto", href: "/contacto" },
 ];
 
 export function Navbar() {
   const [open, setOpen] = useState(false);
+  const location = useLocation();
 
   return (
     <nav className="fixed top-6 left-1/2 -translate-x-1/2 z-50">
@@ -21,13 +23,16 @@ export function Navbar() {
           <span className="font-display font-bold text-accent-foreground text-sm">✦</span>
         </div>
         {navItems.map((item) => (
-          <a
+          <Link
             key={item.href}
-            href={item.href}
-            className="px-4 py-2 rounded-full text-sm font-medium text-primary-foreground hover:shadow-[0_0_12px_hsl(var(--accent)/0.6)] transition-all duration-200"
+            to={item.href}
+            className={cn(
+              "px-4 py-2 rounded-full text-sm font-medium text-primary-foreground hover:shadow-[0_0_12px_hsl(var(--accent)/0.6)] transition-all duration-200",
+              location.pathname === item.href && "bg-accent text-accent-foreground"
+            )}
           >
             {item.label}
-          </a>
+          </Link>
         ))}
       </div>
 
@@ -42,14 +47,17 @@ export function Navbar() {
         {open && (
           <div className="absolute top-14 left-1/2 -translate-x-1/2 bg-primary rounded-2xl px-6 py-4 shadow-xl flex flex-col gap-2 min-w-[200px]">
             {navItems.map((item) => (
-              <a
+              <Link
                 key={item.href}
-                href={item.href}
+                to={item.href}
                 onClick={() => setOpen(false)}
-                className="px-4 py-2 rounded-full text-sm font-medium text-primary-foreground hover:shadow-[0_0_12px_hsl(var(--accent)/0.6)] transition-all text-center"
+                className={cn(
+                  "px-4 py-2 rounded-full text-sm font-medium text-primary-foreground hover:shadow-[0_0_12px_hsl(var(--accent)/0.6)] transition-all text-center",
+                  location.pathname === item.href && "bg-accent text-accent-foreground"
+                )}
               >
                 {item.label}
-              </a>
+              </Link>
             ))}
           </div>
         )}
