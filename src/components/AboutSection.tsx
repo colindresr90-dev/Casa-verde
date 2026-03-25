@@ -14,23 +14,23 @@ export function AboutSection() {
         >
           <source src="/videos/about-bg.mp4" type="video/mp4" />
         </video>
-        <div className="absolute inset-0 bg-background/85" />
+        <div className="absolute inset-0 bg-black/40" />
       </div>
 
       <div className="max-w-[1400px] mx-auto relative z-10">
         <ScrollReveal>
-          <p className="text-sm font-semibold uppercase tracking-widest text-foreground mb-4 font-body">
+          <p className="text-sm font-semibold uppercase tracking-widest text-white/80 mb-4 font-body">
             Sobre Nosotros
           </p>
         </ScrollReveal>
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           <ScrollReveal>
-            <h2 className="font-display font-black text-foreground text-4xl md:text-6xl italic leading-tight">
+            <h2 className="font-display font-black text-white text-4xl md:text-6xl italic leading-tight">
               Somos un equipo creativo enfocado en resultados.
             </h2>
           </ScrollReveal>
           <ScrollReveal delay={200}>
-            <div className="space-y-6 font-body text-muted-foreground text-lg leading-relaxed">
+            <div className="space-y-6 font-body text-white/80 text-lg leading-relaxed">
               <p>
                 Combinamos estrategia, diseño y tecnología para crear marcas que no solo se ven bien,
                 sino que generan impacto real en el mercado.
@@ -41,16 +41,16 @@ export function AboutSection() {
               </p>
               <div className="grid grid-cols-3 gap-8 pt-8">
                 <div>
-                  <p className="font-display font-black text-foreground text-4xl">50+</p>
-                  <p className="text-sm text-muted-foreground mt-1">Proyectos</p>
+                  <p className="font-display font-black text-white text-4xl">50+</p>
+                  <p className="text-sm text-white/60 mt-1">Proyectos</p>
                 </div>
                 <div>
-                  <p className="font-display font-black text-foreground text-4xl">98%</p>
-                  <p className="text-sm text-muted-foreground mt-1">Satisfacción</p>
+                  <p className="font-display font-black text-white text-4xl">98%</p>
+                  <p className="text-sm text-white/60 mt-1">Satisfacción</p>
                 </div>
                 <div>
-                  <p className="font-display font-black text-foreground text-4xl">5+</p>
-                  <p className="text-sm text-muted-foreground mt-1">Años</p>
+                  <p className="font-display font-black text-white text-4xl">5+</p>
+                  <p className="text-sm text-white/60 mt-1">Años</p>
                 </div>
               </div>
             </div>
