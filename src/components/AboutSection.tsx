@@ -41,16 +41,16 @@ export function AboutSection() {
               </p>
               <div className="grid grid-cols-3 gap-8 pt-8">
                 <div>
-                  <p className="font-display font-black text-foreground text-4xl">50+</p>
-                  <p className="text-sm text-muted-foreground mt-1">Proyectos</p>
+                  <p className="font-display font-black text-white text-4xl">50+</p>
+                  <p className="text-sm text-white/60 mt-1">Proyectos</p>
                 </div>
                 <div>
-                  <p className="font-display font-black text-foreground text-4xl">98%</p>
-                  <p className="text-sm text-muted-foreground mt-1">Satisfacción</p>
+                  <p className="font-display font-black text-white text-4xl">98%</p>
+                  <p className="text-sm text-white/60 mt-1">Satisfacción</p>
                 </div>
                 <div>
-                  <p className="font-display font-black text-foreground text-4xl">5+</p>
-                  <p className="text-sm text-muted-foreground mt-1">Años</p>
+                  <p className="font-display font-black text-white text-4xl">5+</p>
+                  <p className="text-sm text-white/60 mt-1">Años</p>
                 </div>
               </div>
             </div>
