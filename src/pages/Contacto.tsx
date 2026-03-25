@@ -120,7 +120,7 @@ const Contacto = () => {
                       </div>
                       <div>
                         <p className="text-primary-foreground font-body font-medium">Teléfono</p>
-                        <p className="text-primary-foreground/70 font-body">+52 55 1234 5678</p>
+                        <p className="text-primary-foreground/70 font-body">+503 7890 1234</p>
                       </div>
                     </div>
                     <div className="flex items-start gap-4">
