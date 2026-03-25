@@ -1,6 +1,7 @@
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { ScrollReveal } from "@/components/ScrollReveal";
+import { CTABanner } from "@/components/CTABanner";
 import workImgPizza from "@/assets/work-pizza.jpg";
 import workImg2 from "@/assets/work-2.jpg";
 import workImg3 from "@/assets/work-3.jpg";
@@ -123,6 +124,7 @@ const Trabajos = () => {
         </div>
       </section>
 
+      <CTABanner />
       <Footer />
     </main>
   );
