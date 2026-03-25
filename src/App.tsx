@@ -11,6 +11,7 @@ import Contacto from "./pages/Contacto.tsx";
 import NotFound from "./pages/NotFound.tsx";
 import { ScrollToTop } from "./components/ScrollToTop.tsx";
 import { BackToTop } from "./components/BackToTop.tsx";
+import { FloatingCTA } from "./components/FloatingCTA.tsx";
 
 const queryClient = new QueryClient();
 
@@ -22,6 +23,7 @@ const App = () => (
       <BrowserRouter>
         <ScrollToTop />
         <BackToTop />
+        <FloatingCTA />
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/nosotros" element={<Nosotros />} />
