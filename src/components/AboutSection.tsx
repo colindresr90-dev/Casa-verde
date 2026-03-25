@@ -25,7 +25,7 @@ export function AboutSection() {
         </ScrollReveal>
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           <ScrollReveal>
-            <h2 className="font-display font-black text-foreground text-4xl md:text-6xl italic leading-tight">
+            <h2 className="font-display font-black text-white text-4xl md:text-6xl italic leading-tight">
               Somos un equipo creativo enfocado en resultados.
             </h2>
           </ScrollReveal>
