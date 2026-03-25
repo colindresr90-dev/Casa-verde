@@ -76,7 +76,7 @@ const Contacto = () => {
                     <label className="text-sm font-body font-medium text-foreground mb-2 block">Teléfono</label>
                     <Input
                       type="tel"
-                      placeholder="+52 55 1234 5678"
+                      placeholder="+503 7890 1234"
                       value={form.phone}
                       onChange={(e) => setForm({ ...form, phone: e.target.value })}
                       className="rounded-xl bg-background border-border/50 h-12"
