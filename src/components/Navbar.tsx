@@ -52,11 +52,11 @@ export function Navbar() {
                 to={item.href}
                 onClick={() => setOpen(false)}
                 className={cn(
-                  "px-4 py-2 rounded-full text-sm font-medium text-primary-foreground hover:shadow-[0_0_12px_hsl(var(--accent)/0.6)] transition-all text-center nav-flip",
+                  "px-4 py-2 rounded-full text-sm font-medium text-primary-foreground hover:shadow-[0_0_12px_hsl(var(--accent)/0.6)] transition-all text-center text-roll",
                   location.pathname === item.href && "bg-accent text-accent-foreground"
                 )}
               >
-                <span className="nav-flip-inner"><span>{item.label}</span><span>{item.label}</span></span>
+                <span className="text-roll-inner"><span>{item.label}</span><span>{item.label}</span></span>
               </Link>
             ))}
           </div>
