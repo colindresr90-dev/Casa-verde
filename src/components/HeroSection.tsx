@@ -1,13 +1,19 @@
 import heroImg1 from "@/assets/hero-1.jpg";
 import heroImg2 from "@/assets/hero-2.jpg";
+import heroMobileBg from "@/assets/hero-mobile-bg.jpg";
 import { Button } from "@/components/ui/button";
 import { ArrowUpRight } from "lucide-react";
 import { Link } from "react-router-dom";
 
 export function HeroSection() {
   return (
-    <section id="inicio" className="min-h-screen flex items-center pt-28 pb-20 px-6 lg:px-16">
-      <div className="max-w-[1400px] mx-auto w-full grid lg:grid-cols-2 gap-12 items-center">
+    <section id="inicio" className="relative min-h-screen flex items-center pt-28 pb-20 px-6 lg:px-16">
+      {/* Mobile background image */}
+      <div className="absolute inset-0 lg:hidden">
+        <img src={heroMobileBg} alt="" className="w-full h-full object-cover" />
+        <div className="absolute inset-0 bg-background/70" />
+      </div>
+      <div className="relative z-10 max-w-[1400px] mx-auto w-full grid lg:grid-cols-2 gap-12 items-center">
         {/* Left */}
         <div>
           <h1 className="font-display font-black text-foreground text-4xl md:text-5xl lg:text-6xl leading-[0.95] tracking-tight uppercase">
