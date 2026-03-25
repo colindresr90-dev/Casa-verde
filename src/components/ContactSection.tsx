@@ -31,7 +31,7 @@ export function ContactSection() {
             </div>
             <div className="flex items-center gap-2">
               <MapPin size={16} />
-              <span>Ciudad de México, MX</span>
+              <span>San Salvador, El Salvador</span>
             </div>
           </div>
         </ScrollReveal>
