@@ -8,8 +8,8 @@ const plans = [
   {
     name: "Básico",
     desc: "Perfecto para equipos pequeños explorando soporte creativo.",
-    monthly: 999,
-    yearly: 799,
+    monthly: 350,
+    yearly: 280,
     features: [
       "Hasta 3 activos de marca",
       "Plantillas de diseño básicas",
@@ -21,8 +21,8 @@ const plans = [
   {
     name: "Profesional",
     desc: "Diseñado para marcas en crecimiento que necesitan producción creativa constante.",
-    monthly: 1999,
-    yearly: 1599,
+    monthly: 550,
+    yearly: 440,
     features: [
       "Activos de marca ilimitados",
       "Colaboración hasta 5 miembros",
@@ -34,8 +34,8 @@ const plans = [
   {
     name: "Premium",
     desc: "Asociación creativa integral para negocios en crecimiento.",
-    monthly: 2999,
-    yearly: 2399,
+    monthly: 800,
+    yearly: 640,
     features: [
       "Miembros ilimitados",
       "Dashboards personalizados",
