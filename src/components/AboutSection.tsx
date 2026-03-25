@@ -19,7 +19,7 @@ export function AboutSection() {
 
       <div className="max-w-[1400px] mx-auto relative z-10">
         <ScrollReveal>
-          <p className="text-sm font-semibold uppercase tracking-widest text-foreground mb-4 font-body">
+          <p className="text-sm font-semibold uppercase tracking-widest text-white/80 mb-4 font-body">
             Sobre Nosotros
           </p>
         </ScrollReveal>
