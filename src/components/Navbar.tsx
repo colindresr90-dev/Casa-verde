@@ -24,7 +24,7 @@ export function Navbar() {
           <a
             key={item.href}
             href={item.href}
-            className="px-4 py-2 rounded-full text-sm font-medium text-primary-foreground hover:bg-primary-foreground/10 transition-colors duration-200"
+            className="px-4 py-2 rounded-full text-sm font-medium text-primary-foreground hover:shadow-[0_0_12px_hsl(var(--accent)/0.6)] transition-all duration-200"
           >
             {item.label}
           </a>
@@ -46,7 +46,7 @@ export function Navbar() {
                 key={item.href}
                 href={item.href}
                 onClick={() => setOpen(false)}
-                className="px-4 py-2 rounded-full text-sm font-medium text-primary-foreground hover:bg-primary-foreground/10 transition-colors text-center"
+                className="px-4 py-2 rounded-full text-sm font-medium text-primary-foreground hover:shadow-[0_0_12px_hsl(var(--accent)/0.6)] transition-all text-center"
               >
                 {item.label}
               </a>

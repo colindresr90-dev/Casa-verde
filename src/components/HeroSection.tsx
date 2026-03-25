@@ -9,12 +9,10 @@ export function HeroSection() {
       <div className="max-w-[1400px] mx-auto w-full grid lg:grid-cols-2 gap-12 items-center">
         {/* Left */}
         <div>
-          <h1 className="font-display font-black text-foreground text-5xl md:text-7xl lg:text-8xl leading-[0.95] tracking-tight uppercase">
-            Llevamos tu
+          <h1 className="font-display font-black text-foreground text-4xl md:text-5xl lg:text-6xl leading-[0.95] tracking-tight uppercase">
+            Llevamos tu visión
             <br />
-            visión al
-            <br />
-            siguiente nivel.
+            al siguiente nivel.
           </h1>
           <p className="mt-8 text-muted-foreground text-lg md:text-xl max-w-lg font-body leading-relaxed">
             Donde la imaginación, la estrategia y el storytelling se unen para crear

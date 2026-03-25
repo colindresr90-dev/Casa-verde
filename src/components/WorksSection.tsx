@@ -1,5 +1,5 @@
 import { ScrollReveal } from "@/components/ScrollReveal";
-import workImg1 from "@/assets/work-1.jpg";
+import workImgPizza from "@/assets/work-pizza.jpg";
 import workImg2 from "@/assets/work-2.jpg";
 import workImg3 from "@/assets/work-3.jpg";
 import workImg4 from "@/assets/work-4.jpg";
@@ -7,11 +7,11 @@ import workImg5 from "@/assets/work-5.jpg";
 import { ArrowUpRight } from "lucide-react";
 
 const featuredWork = {
-  date: "Jun 2024",
-  category: "PACKAGING",
-  title: "Velocity Motors",
-  description: "Una marca de alto rendimiento creada para una nueva era de deportivos eléctricos, rápida y cargada de emoción.",
-  image: workImg1,
+  date: "Mar 2025",
+  category: "BRANDING",
+  title: "La Bella Napoli",
+  description: "Identidad visual completa para una pizzería artesanal que fusiona la tradición italiana con un toque contemporáneo y auténtico.",
+  image: workImgPizza,
 };
 
 const secondWork = {
