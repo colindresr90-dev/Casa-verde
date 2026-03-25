@@ -1,0 +1,59 @@
+import { useState } from "react";
+import { cn } from "@/lib/utils";
+import { Menu, X } from "lucide-react";
+
+const navItems = [
+  { label: "Inicio", href: "#inicio" },
+  { label: "Nosotros", href: "#nosotros" },
+  { label: "Servicios", href: "#servicios" },
+  { label: "Trabajos", href: "#trabajos" },
+  { label: "Contacto", href: "#contacto" },
+];
+
+export function Navbar() {
+  const [open, setOpen] = useState(false);
+
+  return (
+    <nav className="fixed top-6 left-1/2 -translate-x-1/2 z-50">
+      {/* Desktop */}
+      <div className="hidden md:flex items-center gap-1 bg-primary rounded-full px-2 py-2 shadow-lg">
+        <div className="w-10 h-10 rounded-full bg-accent flex items-center justify-center mr-1">
+          <span className="font-display font-bold text-accent-foreground text-sm">✦</span>
+        </div>
+        {navItems.map((item) => (
+          <a
+            key={item.href}
+            href={item.href}
+            className="px-4 py-2 rounded-full text-sm font-medium text-primary-foreground hover:bg-primary-foreground/10 transition-colors duration-200"
+          >
+            {item.label}
+          </a>
+        ))}
+      </div>
+
+      {/* Mobile */}
+      <div className="md:hidden">
+        <button
+          onClick={() => setOpen(!open)}
+          className="bg-primary rounded-full p-3 shadow-lg text-primary-foreground"
+        >
+          {open ? <X size={20} /> : <Menu size={20} />}
+        </button>
+        {open && (
+          <div className="absolute top-14 left-1/2 -translate-x-1/2 bg-primary rounded-2xl px-6 py-4 shadow-xl flex flex-col gap-2 min-w-[200px]">
+            {navItems.map((item) => (
+              <a
+                key={item.href}
+                href={item.href}
+                onClick={() => setOpen(false)}
+                className="px-4 py-2 rounded-full text-sm font-medium text-primary-foreground hover:bg-primary-foreground/10 transition-colors text-center"
+              >
+                {item.label}
+              </a>
+            ))}
+          </div>
+        )}
+      </div>
+    </nav>
+  );
+}
