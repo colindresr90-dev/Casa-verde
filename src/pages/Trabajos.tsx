@@ -124,6 +124,7 @@ const Trabajos = () => {
         </div>
       </section>
 
+      <CTABanner />
       <Footer />
     </main>
   );

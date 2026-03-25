@@ -88,6 +88,7 @@ const Servicios = () => {
 
       <PricingSection />
       <FAQSection />
+      <CTABanner />
       <Footer />
     </main>
   );
