@@ -129,7 +129,7 @@ const Contacto = () => {
                       </div>
                       <div>
                         <p className="text-primary-foreground font-body font-medium">Ubicación</p>
-                        <p className="text-primary-foreground/70 font-body">Av. Reforma 222, Col. Juárez<br />Ciudad de México, CP 06600</p>
+                        <p className="text-primary-foreground/70 font-body">Blvd. Los Héroes, Col. San Benito<br />San Salvador, El Salvador</p>
                       </div>
                     </div>
                   </div>
