@@ -3,6 +3,7 @@ import { Footer } from "@/components/Footer";
 import { ScrollReveal } from "@/components/ScrollReveal";
 import { PricingSection } from "@/components/PricingSection";
 import { FAQSection } from "@/components/FAQSection";
+import { CTABanner } from "@/components/CTABanner";
 import serviceImg1 from "@/assets/service-1.jpg";
 import serviceImg2 from "@/assets/service-2.jpg";
 import serviceImg3 from "@/assets/service-3.jpg";
