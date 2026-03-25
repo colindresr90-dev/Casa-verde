@@ -3,6 +3,7 @@ import { Footer } from "@/components/Footer";
 import { ScrollReveal } from "@/components/ScrollReveal";
 import { CTABanner } from "@/components/CTABanner";
 import aboutImg from "@/assets/about-hero.jpg";
+import valuesBg from "@/assets/values-bg.jpg";
 import { Target, Lightbulb, Users, TrendingUp, Heart, Zap, Globe, Award } from "lucide-react";
 
 const blocks = [
