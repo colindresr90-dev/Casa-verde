@@ -2,6 +2,7 @@ import heroImg1 from "@/assets/hero-1.jpg";
 import heroImg2 from "@/assets/hero-2.jpg";
 import { Button } from "@/components/ui/button";
 import { ArrowUpRight } from "lucide-react";
+import { Link } from "react-router-dom";
 
 export function HeroSection() {
   return (
