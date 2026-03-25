@@ -101,27 +101,31 @@
   width: 100%;
 }
 
-/* Nav link flip */
+/* Nav link flip - continuous roll while hovered */
 .nav-flip {
-  display: inline-block;
+  display: inline-flex;
   overflow: hidden;
-  position: relative;
+  height: 1.25em;
+  line-height: 1.25em;
 }
 
 .nav-flip .nav-flip-inner {
-  display: inline-block;
-  transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-flip .nav-flip-inner span {
+  height: 1.25em;
+  line-height: 1.25em;
 }
 
 .nav-flip:hover .nav-flip-inner {
-  transform: translateY(-100%);
+  animation: navRoll 0.4s ease forwards;
 }
 
-.nav-flip .nav-flip-inner::after {
-  content: attr(data-text);
-  position: absolute;
-  top: 100%;
-  left: 0;
+@keyframes navRoll {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-50%); }
 }
 
 html {
