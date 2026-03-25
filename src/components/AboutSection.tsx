@@ -30,7 +30,7 @@ export function AboutSection() {
             </h2>
           </ScrollReveal>
           <ScrollReveal delay={200}>
-            <div className="space-y-6 font-body text-muted-foreground text-lg leading-relaxed">
+            <div className="space-y-6 font-body text-white/80 text-lg leading-relaxed">
               <p>
                 Combinamos estrategia, diseño y tecnología para crear marcas que no solo se ven bien,
                 sino que generan impacto real en el mercado.
