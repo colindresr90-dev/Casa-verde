@@ -9,6 +9,8 @@ import Servicios from "./pages/Servicios.tsx";
 import Trabajos from "./pages/Trabajos.tsx";
 import Contacto from "./pages/Contacto.tsx";
 import NotFound from "./pages/NotFound.tsx";
+import { ScrollToTop } from "./components/ScrollToTop.tsx";
+import { BackToTop } from "./components/BackToTop.tsx";
 
 const queryClient = new QueryClient();
 
@@ -18,6 +20,8 @@ const App = () => (
       <Toaster />
       <Sonner />
       <BrowserRouter>
+        <ScrollToTop />
+        <BackToTop />
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/nosotros" element={<Nosotros />} />
