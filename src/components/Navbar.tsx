@@ -31,7 +31,7 @@ export function Navbar() {
               location.pathname === item.href && "bg-accent text-accent-foreground"
             )}
           >
-            <span className="nav-flip-inner" data-text={item.label}>{item.label}</span>
+            <span className="nav-flip-inner"><span>{item.label}</span><span>{item.label}</span></span>
           </Link>
         ))}
       </div>
