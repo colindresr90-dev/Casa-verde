@@ -33,7 +33,7 @@ export function TestimonialsSection() {
                 ✓✓
               </div>
               <div className="rounded-3xl overflow-hidden border-2 border-border/30 shadow-xl rotate-2">
-                <img src={testimonialImg} alt="Cliente satisfecho" loading="lazy" className="w-full h-[400px] object-cover object-top" />
+                <img src={testimonialImg.src} alt="Cliente satisfecho" loading="lazy" className="w-full h-[400px] object-cover object-top" />
                 <div className="absolute bottom-6 left-6 right-6">
                   <p className="font-display font-bold text-primary-foreground text-lg drop-shadow-lg">Yakoub Kashmiri</p>
                   <p className="text-primary-foreground/80 text-sm font-body drop-shadow-lg">Director de Marketing</p>

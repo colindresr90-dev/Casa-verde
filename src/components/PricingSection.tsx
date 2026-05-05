@@ -1,3 +1,5 @@
+"use client";
+
 import { useState } from "react";
 import { ScrollReveal } from "@/components/ScrollReveal";
 import { Check } from "lucide-react";

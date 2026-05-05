@@ -112,7 +112,7 @@ const Trabajos = () => {
                 </div>
                 <div className={`rounded-3xl overflow-hidden shadow-xl border border-border/30 ${i % 2 === 1 ? "order-1" : ""}`}>
                   <img
-                    src={project.image}
+                    src={project.image.src}
                     alt={project.title}
                     loading="lazy"
                     className="w-full h-[450px] object-cover hover:scale-105 transition-transform duration-700"

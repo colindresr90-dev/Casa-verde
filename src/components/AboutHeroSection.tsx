@@ -25,7 +25,7 @@ export function AboutHeroSection() {
                 ✓✓
               </div>
               <div className="rounded-3xl overflow-hidden border-2 border-primary-foreground/10 shadow-2xl rotate-1">
-                <img src={aboutImg} alt="Sobre nosotros" loading="lazy" className="w-full h-[400px] object-cover" />
+                <img src={aboutImg.src} alt="Sobre nosotros" loading="lazy" className="w-full h-[400px] object-cover" />
               </div>
             </div>
           </div>

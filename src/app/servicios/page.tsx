@@ -78,7 +78,7 @@ const Servicios = () => {
                   </ul>
                 </div>
                 <div className={`rounded-3xl overflow-hidden shadow-xl ${i % 2 === 1 ? "order-1 lg:order-1" : ""}`}>
-                  <img src={service.image} alt={service.title} loading="lazy" className="w-full h-[400px] object-cover" />
+                  <img src={service.image.src} alt={service.title} loading="lazy" className="w-full h-[400px] object-cover" />
                 </div>
               </div>
             </ScrollReveal>

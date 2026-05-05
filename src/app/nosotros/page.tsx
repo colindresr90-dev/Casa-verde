@@ -63,7 +63,7 @@ const Nosotros = () => {
                 Somos una agencia creativa con sede en San Salvador, El Salvador. Combinamos estrategia, diseño y tecnología para crear marcas que no solo se ven bien, sino que generan impacto real en el mercado. Cada proyecto es una oportunidad para superar expectativas.
               </p>
               <div className="rounded-3xl overflow-hidden shadow-2xl">
-                <img src={aboutImg} alt="Equipo creativo" className="w-full h-[350px] object-cover" />
+                <img src={aboutImg.src} alt="Equipo creativo" className="w-full h-[350px] object-cover" />
               </div>
             </div>
           </ScrollReveal>
@@ -118,7 +118,7 @@ const Nosotros = () => {
       {/* Values */}
       <section className="py-24 px-6 lg:px-16 relative overflow-hidden">
         <div className="absolute inset-0">
-          <img src={valuesBg} alt="" className="w-full h-full object-cover" />
+          <img src={valuesBg.src} alt="" className="w-full h-full object-cover" />
           <div className="absolute inset-0 bg-primary/85" />
         </div>
         <div className="max-w-[1400px] mx-auto relative z-10">

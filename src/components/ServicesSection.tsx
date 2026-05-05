@@ -50,7 +50,7 @@ export function ServicesSection() {
             <ScrollReveal key={service.title} delay={i * 150}>
               <div className="group relative rounded-3xl overflow-hidden h-[450px] cursor-pointer">
                 <img
-                  src={service.image}
+                  src={service.image.src}
                   alt={service.title}
                   loading="lazy"
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"

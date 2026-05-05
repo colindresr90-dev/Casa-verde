@@ -61,7 +61,7 @@ export function WorksSection() {
               </a>
             </div>
             <div className="rounded-3xl overflow-hidden border border-primary-foreground/10">
-              <img src={featuredWork.image} alt={featuredWork.title} loading="lazy" className="w-full h-[400px] object-cover" />
+              <img src={featuredWork.image.src} alt={featuredWork.title} loading="lazy" className="w-full h-[400px] object-cover" />
             </div>
           </div>
         </ScrollReveal>
@@ -70,7 +70,7 @@ export function WorksSection() {
         <ScrollReveal>
           <div className="grid lg:grid-cols-2 gap-12 items-center mb-20">
             <div className="rounded-3xl overflow-hidden border border-primary-foreground/10 order-2 lg:order-1">
-              <img src={secondWork.image} alt={secondWork.title} loading="lazy" className="w-full h-[400px] object-cover" />
+              <img src={secondWork.image.src} alt={secondWork.title} loading="lazy" className="w-full h-[400px] object-cover" />
             </div>
             <div className="order-1 lg:order-2 lg:text-right">
               <p className="text-primary-foreground/60 text-sm font-body mb-2">
@@ -102,7 +102,7 @@ export function WorksSection() {
                   <span className="text-primary-foreground/60 text-sm font-body tracking-wider">{work.category}</span>
                 </div>
                 <div className="w-16 h-16 rounded-2xl overflow-hidden border border-primary-foreground/10">
-                  <img src={work.image} alt={work.title} loading="lazy" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+                  <img src={work.image.src} alt={work.title} loading="lazy" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
                 </div>
               </div>
             </ScrollReveal>
